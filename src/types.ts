@@ -66,6 +66,37 @@ export interface ReviewReport {
   annotations: FileAnnotation[];
 }
 
+export interface Project {
+  id: string;
+  name: string;
+  description: string;
+  openPRCount: number;
+  webUrl: string;
+  platform: Platform;
+  owner?: string;
+}
+
+export interface TaskIssue {
+  id: string;
+  title: string;
+  description: string;
+  state: string;
+  type: string; // e.g. "Task", "User Story", "Bug"
+  assignee?: string;
+  assigneeAvatar?: string;
+  subtasks?: string[];
+  functionalSpecs?: string;
+}
+
+export interface SprintInfo {
+  name: string;
+  startDate?: string;
+  endDate?: string;
+  state: "active" | "future" | "past";
+  totalPoints?: number;
+}
+
+
 export interface PRAnalysisResult {
   prDetails: PRDetails;
   files: FileDiff[];
