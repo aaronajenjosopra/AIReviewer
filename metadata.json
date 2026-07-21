@@ -1,0 +1,6 @@
+{
+  "name": "PR Reviewer IA",
+  "description": "Revisor inteligente de Pull Requests para GitLab y Azure DevOps que analiza automáticamente el código en busca de errores lógicos, vulnerabilidades de seguridad y optimizaciones.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
